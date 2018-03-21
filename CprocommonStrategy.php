@@ -1,24 +1,24 @@
 <?php
 /**
- * Truenth strategy for Opauth
+ * Cprocommon strategy for Opauth
  * based on https://developers.google.com/accounts/docs/OAuth2
  *
  * More information on Opauth: http://opauth.org
  *
  * @copyright    Copyright © 2015 University of Washington
- * @package      Opauth.TruenthStrategy
+ * @package      Opauth.CprocommonStrategy
  * @license      MIT License
  */
 
 /**
- * Truenth strategy for Opauth
+ * Cprocommon strategy for Opauth
  * based on https://developers.google.com/accounts/docs/OAuth2
  *
- * @package         Opauth.Truenth
+ * @package         Opauth.Cprocommon
  */
 App::uses('HttpSocket', 'Network/Http');
 App::uses('DatabaseSessionPlusUserId', 'Datasource/Session');
-class TruenthStrategy extends OpauthStrategy{
+class CprocommonStrategy extends OpauthStrategy{
 
     /**
      * Compulsory config keys, listed as unassociative arrays
@@ -77,7 +77,7 @@ class TruenthStrategy extends OpauthStrategy{
         $correct_decoded_sig = hash_hmac(
             'sha256',
             $encoded_data,
-            Configure::read('Opauth.Strategy.Truenth.client_secret'),
+            Configure::read('Opauth.Strategy.Cprocommon.client_secret'),
             true
         );
         $correct_encoded_sig = strtr(base64_encode($correct_decoded_sig), '+/', '-_');
