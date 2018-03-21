@@ -1,6 +1,6 @@
-Opauth-Truenth
+Opauth-Cpro-Common
 =============
-[Opauth][1] strategy for Truenth authentication.
+[Opauth][1] strategy for cPRO authentication.
 
 Implemented based on http://developer.github.com/v3/oauth/ using OAuth2.
 
@@ -10,19 +10,19 @@ Demo: http://opauth.org/#github
 
 Getting started
 ----------------
-1. Install Opauth-Truenth:
+1. Install Opauth-Cpro-Common:
    ```bash
    cd app/Plugin/Opauth/Strategy 
-   git clone https://github.com/uwcirg/opauth-truenth.git Truenth
+   git clone https://github.com/uwcirg/opauth-cpro-common.git CproCommon
    ```
 
-2. Register the Truenth application/intervention at the appropriate
-   Truenth Portal URL, i.e. `https://truenth-demo.cirg.washington.edu/client`
+2. Register the cPRO application/intervention at the appropriate
+   cPRO Portal URL, i.e. `https://mpower.cirg.washington.edu/client`
    - Enter Authorized URL: (i.e. the callback URL for the
      application/intervention being install i.e.
      `http://fqdn/application-path/truenth/oauth2callback`
    
-3. Configure Opauth-Truenth strategy with `client_id` and `client_secret` 
+3. Configure Opauth-Cpro-Common strategy with `client_id` and `client_secret` 
    returned from the portal `/client` request.
 
 4. Direct user to `http://fqdn/application-path/truenth` to authenticate
@@ -49,7 +49,7 @@ Optional parameters:
 
 License
 ---------
-Opauth-Truenth is MIT Licensed  
+Opauth-Cpro-Common is MIT Licensed  
 Copyright © 2015 University of Washington 
 
 [1]: https://github.com/uzyn/opauth
